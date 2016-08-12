@@ -29,7 +29,6 @@ group :production do
 	# production database for heroku
 	gem	'pg'
 	gem 'rails_12factor'
-  gem 'aws-sdk', '~> 2.5.2'
 end
 
 
