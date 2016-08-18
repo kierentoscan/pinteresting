@@ -8,7 +8,7 @@ class User < ApplicationRecord
     #                 :on => :create,
     #                 :format => {:with => /\A.*(?=.{10,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\@\#\$\%\^\&\+\=]).*\Z/ }
 
-	has_many :pins
+	has_many :pins, dependent: :destroy
 
 	validates :name, presence: true
 
